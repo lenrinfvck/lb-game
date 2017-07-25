@@ -1,0 +1,541 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+p,
+blockquote,
+table,
+th,
+td,
+embed,
+object {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: '微软雅黑', 'Hiragino Sans GB';
+  font-size: 14px;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img,
+abbr {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+th,
+var {
+  font-weight: normal;
+  font-style: normal;
+}
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.0em;
+}
+a,
+a:visited,
+a:link,
+a:active,
+ins {
+  text-decoration: none;
+  color: inherit;
+}
+/*lenrinfvck HomePage 2014v2 */
+/*
+*Title: lrfmad common.less
+*By: lenrinfvck
+*Create: 2015-12-22
+*Update: -
+*/
+/* img居中剪裁
+    <div style="overflow: hidden">
+        <div class="img-warp">
+            <img />
+        </div>
+    </div>
+*/
+.img-warp {
+  position: relative;
+  text-align: center;
+  margin: 0 -9999px;
+}
+.prolist-con-4 {
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.prolist-con-4 .prolist-warp {
+  width: 1025px;
+  margin-left: -10px;
+}
+.prolist-con-4:after {
+  content: '';
+  clear: both;
+  visibility: hidden;
+  display: block;
+}
+.prolist-con-4 .procon {
+  margin-left: 10px;
+}
+@-webkit-keyframes up-fadein {
+  0% {
+    display: block;
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes up-fadein {
+  0% {
+    display: block;
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@-webkit-keyframes shake-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  50% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  70% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  90% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes shake-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  50% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  70% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  90% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes updown {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+@keyframes updown {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+@-webkit-keyframes updown-lite {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+@keyframes updown-lite {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  background: #F2F2F2;
+}
+.topBar {
+  background: #000;
+  height: 30px;
+  width: 100%;
+}
+.nav {
+  width: 40%;
+  height: 30px;
+  background: #000;
+  margin: 0 auto;
+  position: relative;
+  min-width: 256px;
+}
+.nav li {
+  display: inline-block;
+  width: 25%;
+  height: 30px;
+  text-align: center;
+  color: #D8D8D8;
+  line-height: 30px;
+  cursor: default;
+  z-index: 2;
+  float: left;
+}
+.nav li:hover {
+  color: #fff;
+  text-shadow: 0 0 6px #fff;
+}
+.nav li a {
+  background: #000;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 100;
+}
+.nav li a:visited,
+.nav li a:active,
+.nav li a:link {
+  color: inherit;
+}
+.tagBox {
+  display: inline-block;
+  width: 100%;
+  height: 80px;
+  z-index: 99;
+  position: relative;
+  top: -72px;
+}
+.actived {
+  text-shadow: 0 0 6px #fff;
+}
+.nav .actived {
+  color: #fff;
+}
+.nav .actived .tagBox {
+  top: -62px;
+}
+.topBnt {
+  width: 50px;
+  height: 50px;
+  background: #333;
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  margin-left: 495px;
+  z-index: 99;
+  opacity: 0.6;
+  text-align: center;
+  line-height: 50px;
+  cursor: default;
+  color: #fff;
+  display: none;
+}
+.topBnt:hover {
+  width: 50px;
+  height: 50px;
+  background: #EEE;
+  color: #000;
+}
+.content {
+  position: relative;
+  z-index: 1;
+}
+a[href^="http://tongji"] {
+  display: none;
+}
+@media all and (max-width: 1010px) {
+  .topBnt {
+    margin-left: 0;
+    left: auto;
+    right: 5%;
+  }
+}
+.tagBox {
+  top: -72px;
+  -webkit-transition: ease 0.3s;
+          transition: ease 0.3s;
+}
+.nav li:hover .tagBox {
+  top: -52px;
+}
+/*IndexPlayCss v0.8 */
+.play {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: 0px 1px 3px 0.2px #000;
+          box-shadow: 0px 1px 3px 0.2px #000;
+}
+.playCenter {
+  position: relative;
+  left: 50%;
+  width: 1920px;
+  height: 100%;
+}
+.playThing {
+  width: 1920px;
+  height: 100%;
+  background: #F2F2F2;
+  position: absolute;
+  z-index: 1;
+  left: -50%;
+}
+.bk {
+  width: 100%;
+  height: 600px;
+}
+.playThing .bk img {
+  position: relative;
+  text-align: center;
+  left: 50%;
+  margin-left: -960px;
+}
+.anime img {
+  position: absolute;
+  z-index: 4;
+}
+.playing {
+  display: block;
+  z-index: 2;
+}
+.playBnt {
+  position: absolute;
+  top: 100%;
+  left: -50%;
+  margin: -20px auto 0 auto;
+  width: 1920px;
+  text-align: center;
+  z-index: 7;
+}
+.playBnt li {
+  background: #333;
+  width: 30px;
+  position: relative;
+  height: 40px;
+  display: inline-block;
+  margin: 0 2px;
+}
+.playBnt li:hover {
+  background: #25B2D5;
+}
+.contentPlay {
+  width: auto;
+  height: 90%;
+  margin: 0 auto;
+  position: relative;
+  top: 5%;
+  text-align: center;
+  min-width: 320px;
+}
+/*index.html*/
+.pageB {
+  width: 100%;
+  background: #F2F2F2;
+  padding-top: 30px;
+}
+.aLogo {
+  padding-bottom: 30px;
+}
+.lan {
+  width: auto;
+  height: auto;
+  margin-top: 30px;
+  display: inline-block;
+  background: url(../images/logoW.jpg) center no-repeat;
+}
+.lan img {
+  -webkit-box-shadow: 0px 1px 3px 0.2px #000;
+          box-shadow: 0px 1px 3px 0.2px #000;
+}
+.madLan,
+.webLan {
+  display: inline-block;
+  margin: 0px 20px;
+  background: none;
+}
+.pageB h2 {
+  font-size: 1.5rem;
+  margin: 10px auto 5px auto;
+}
+.pageB h3 {
+  font-size: 0.9rem;
+  margin: 1px auto;
+  color: #999;
+  font-weight: normal;
+}
+.pageB h4 {
+  font-size: 1rem;
+  margin: 3px auto;
+  color: #FFF;
+}
+.pageB h5 {
+  font-size: 0.8rem;
+  color: #999;
+  font-weight: normal;
+  margin: 0px auto;
+}
+/*mad.html*/
+.mask {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#99000000', EndColorStr='#99000000');
+  background: url(about:blank);
+  background: rgba(0, 0, 0, 0.6);
+}
+:root .mask {
+  -webkit-filter: none;
+          filter: none;
+}
+.video {
+  position: fixed;
+  z-index: 10000;
+  width: 970px;
+  height: 540px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+.video .videoBk {
+  display: inline-block;
+  background: #000;
+  width: auto;
+  height: 540px;
+}
+.closeBnt {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  opacity: 0.7;
+  float: right;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.5em;
+  cursor: default;
+}
+.closeBnt:hover {
+  opacity: 1;
+  z-index: 10000;
+}
+@media screen and (max-width: 600px) {
+  .play {
+    zoom: 0.5\9;
+    -ms-transform: scale(0.5);
+        transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+    -webkit-transform-origin: 0% 0%;
+    -o-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+  }
+  .play {
+    width: 200%;
+    position: absolute;
+  }
+  .playBnt li {
+    margin: 0 10px;
+    width: 80px;
+  }
+  .pageB {
+    padding-top: 320px;
+  }
+}
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+}
+.warp-height {
+  min-height: 100%;
+}

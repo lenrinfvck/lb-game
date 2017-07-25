@@ -1,0 +1,1 @@
+$(document).ready(function(){document.documentElement.clientWidth,document.documentElement.clientHeight;roles={};var e=$(".lb-con").lb_game();$(".play-btn").click(function(){$(this).fadeOut(),e.play()})});
